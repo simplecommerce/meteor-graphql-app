@@ -1,0 +1,29 @@
+{
+  "name": "simple-todos-react",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.4.7",
+    "@babel/runtime": "^7.15.3",
+    "apollo-server": "^2.25.2",
+    "graphql": "^14.7.0",
+    "isomorphic-fetch": "^3.0.0",
+    "lodash": "^4.17.21",
+    "meteor-node-stubs": "^1.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "url": "^0.11.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}

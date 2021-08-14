@@ -1,0 +1,8 @@
+type Query {
+    getProject(_id: ID!): String
+    getProjects: [String!]
+}
+
+type Mutation {
+    addProject(input: String!): Boolean!
+}
